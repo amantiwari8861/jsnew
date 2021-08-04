@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function draw() {
+            var can=document.getElementById("can");
+            var ctx=can.getContext("2d");
+
+            var grad=ctx.createLinearGradient(0,50,65,0);
+            grad.addColorStop(0,"blue");
+            grad.addColorStop("0.5","red");
+            grad.addColorStop(1,"yellow");
+            ctx.fillStyle=grad;
+          // ctx.fillStyle="red";
+            ctx.fillRect(10,10,400,500);
+        }
+    </script>
+</head>
+<body>
+    <canvas width="400" height="500" id="can" style="border: 1px solid black;background-color: khaki;"></canvas>
+    <input type="button" value="click" onclick="draw()">
+</body>
+</html>

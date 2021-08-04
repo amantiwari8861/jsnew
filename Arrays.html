@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //var nam=prompt("enter name !");
+        var obj={
+            //name:nam,
+            class:"12th",
+            //fxn3:function fun(){ return "fun functions";}
+            fxn3:fun
+        };
+        
+        function fun()
+        {
+            return ("hello world "+this.class);
+        }
+
+        //alert(obj.name);
+        //alert(obj.class);
+        alert(obj.fxn3());
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

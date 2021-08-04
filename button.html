@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- <input type="button" id="btn" value="click"> -->
+<button id="btn">Click2</button>
+<div id="con">
+
+</div>
+</body>
+<script>
+    var btn=document.getElementById("btn");
+    //btn.addEventListener('click',()=>{ //arrow
+    btn.addEventListener('click',function(){//anonymous fxn
+        alert("hello i am arrow fxn()");
+    });
+    /*function myfxn(num1,num2)
+    {
+        var arr=[num1,num2];
+        return arr;
+    }
+    
+    var res=myfxn(10,20);
+    document.getElementById("con").innerHTML="hello "+res[0]+" "+res[1];*/
+
+  
+    
+    </script>
+</html>

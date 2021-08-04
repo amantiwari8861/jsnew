@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="submited hidden" id="submited">
+            <span class="submited_text">
+                submited!!✅
+            </span>
+        </div>
+        <div class="error error-username hidden" id="username-error">
+            <span class="error-message" id="username-message">username can only contains letters,numbers ,@ and _ also
+                minumum 4 letters and maximum 15</span>
+        </div>
+        <div class="error error-password hidden" id="password-error">
+            <span class="error-message" id="password-message">Passwords must contain at least 10
+                characters,least 1 uppercase, lowercase letters and digit and at least special character</span>
+        </div>
+        <div class="error error-email hidden" id="email-error">
+            <span class="error-message" id="email-message">Invalid Email Address !!!</span>
+        </div>
+        <div class="error error-number hidden" id="number-error">
+            <span class="error-message" id="number-message">Invalid Mobile Number !!!</span>
+        </div>
+        <form action="" class="form" id="form">
+            <div class="container">
+                <span class="primary">enter your details</span>
+                <div class="form-section">
+                    <div class="inputs">
+                        <label class="label-style" for="username">username</label>
+                        <input class="input-style" type="text" id="username" placeholder="eg. rohan_soni@123">
+                    </div>
+                    <div class="inputs">
+                        <label class="label-style" for="password">password</label>
+                        <input class="input-style" type="password" id="password" placeholder="eg. @Rohan2021">
+                    </div>
+                    <div class="inputs">
+                        <label class="label-style" for="email">Email address</label>
+                        <input class="input-style" type="email" id="email" placeholder="eg. rohan123@gmail.com">
+                    </div>
+                    <div class="inputs">
+                        <label class="label-style" for="number">Mobile number</label>
+                        <input class="input-style" type="text" id="number" placeholder="eg. 1234567890">
+                    </div>
+                    <div class="inputs messsage">
+                        <label class="label-style" for="messsage">messsage</label>
+                        <textarea class="text-area input-style" id="messsage" cols="30" rows="10"
+                            placeholder="write your thoughts here (optional)"></textarea>
+                    </div>
+                    <div class="buttons">
+                        <button class="btn btn-submit" id="submit" type="button">submit</button>
+                        <button class="btn btn-reset" id="reset" type="reset">reset</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="script.js"></script>
+</body>
+
+</html>

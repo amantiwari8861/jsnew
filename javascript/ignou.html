@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate2() {
+            var index=document.getElementById("slct").selectedIndex;
+           var course= document.getElementsByTagName("option")[index].value;
+           var enroll=parseInt(document.getElementById("enrollment").value);
+            //alert("you selected "+index+"th index and their value is "+course);
+        
+        if(enroll=="1186" && course=="mca")
+        {
+            document.getElementById("dat3").innerHTML+="<span>java</span>";
+            document.getElementById("dat3").style.visibility="visible";
+
+            document.getElementById("dat4").innerHTML+="<span>99</span>";
+    
+        }
+        else
+        {
+            alert("ENROLLMENT NO. AND COURSE NOT FOUND ");
+        }
+        
+        }
+    </script>
+</head>
+<body>
+    
+<h1>Welcome to our site </h1>
+
+<form action="" method="post" onsubmit="validate2();">
+<select id="slct">
+<option value="default">--- Choose Course ---</option>
+<option value="bca">Bca</option>
+<option value="mca">Mca</option>
+<option value="bsc">Bsc</option>
+</select>
+<input type="text" id="enrollment">
+<input type="submit" value="submit">
+</form>
+<div id="result">
+<table border="1px" width="80%"> 
+<tr>
+    <th id="dat1">course Code</th>
+    <th id="dat2">marks</th>
+</tr>
+<tr>
+    <th id="dat3">&nbsp;</th>
+    <th id="dat4">&nbsp;</th>
+</tr><tr>
+    <th id="dat3">&nbsp;</th>
+    <th id="dat4">&nbsp;</th>
+</tr>
+</table>
+</div>
+</body>
+</html>

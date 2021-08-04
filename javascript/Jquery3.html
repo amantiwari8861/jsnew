@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <img src="bg-01.jpg" height="200px" width="30%" alt="not loaded ">
+    <script>
+        $(document).ready(function (){
+           
+            // setTimeout(function(){
+            // $("img").fadeOut();},2000);
+            // setTimeout(function() {
+            // $("img").fadeIn();}  ,1000);
+                // $("img").fadeOut("slow");
+                // $("img").fadeOut(5000);
+                document.getElementsByTagName("img")[0].addEventListener("mouseleave",
+                function()
+                {
+                    $("img").fadeOut(3000);
+                })
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function showData() {
+            // alert("welcome in jquery \n our document is ready ");
+            //$("p").hide();
+            //alert("showing the fxn ");
+           // $("p").show();
+            $("button").click(function abc(){
+                $("p").show();
+                $("p span").css("color","red");
+                document.getElementsByTagName("input")[0].focus();
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<input type="text">
+
+    <p style="display: none;">this is <span>Aman</span> paragraph </p>
+    <button>Click to show </button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr3=new Array(5);
+        //arr3[0]=40;
+//        alert(arr3[0]);
+        // arr3[1]=parseInt(prompt("enter the value in arr3[1] :"));
+       /* arr3[1]=prompt("enter the value in arr3[1] :");
+        alert(arr3[1]);
+        arr3[2]=parseInt(prompt("enter the value at arr3[2] "));
+        alert(arr3[2]);
+        arr3[3]=arr3[1]+arr3[2];
+        alert("the value at "+arr3[3]);*/
+        for(var i=0;i<arr3.length;i++)
+        {
+            arr3[i]=prompt('enter the value \n in array\'s ');
+        }
+        function print2()
+        {
+            for(var i=0;i<arr3.length;i++)
+            {
+                document.getElementById('con').innerHTML+=arr3[i]+"</br>";
+            }
+        }
+       
+        alert(arr3.valueOf());
+        arr3.pop();//5
+        var ch=prompt("anythiung");
+        alert(arr3.valueOf());
+        arr3.push(ch);
+        alert(arr3.valueOf());
+
+    </script>
+</head>
+<body text="white">
+    <div id="con">
+        <button onclick="print2();">Click</button>
+
+    </div>
+</body>
+</html>

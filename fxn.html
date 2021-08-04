@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var name="bugati";
+    var Car={
+        //name:"ferrari",
+        name:name,
+        price:"200K",
+        model:this.price,
+        fxn:function(){
+            alert("object created");
+            return 100;
+        }
+    }
+
+    Car.name ="ferrari"; //setting of value
+    delete Car.name;
+    Car.age=21;//add attribute
+    document.writeln(Car.name);
+    document.writeln(Car.price);
+    document.writeln(Car.age);
+    document.write(Car.fxn());
+</script>
+</html>

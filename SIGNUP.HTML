@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <script src='signup.js'></script>
+</head>
+
+<body align='center'>
+    <h1>CREATE YOUR ACCOUNT</h1>
+    <table align='center'>
+        <tr>
+            <td><label for="">Name </label></td>
+            <td><input type="text" name='name' id='name' placeholder="Enter Your Name">
+            </td>
+        </tr>
+        <span id=n1></span>
+        <tr>
+            <td><label for="Email">Email</label></td>
+            <td><input type="text" name='email' id='email' placeholder="Enter Your Email"></td>
+        </tr>
+        <span id=n2></span>
+        <tr>
+            <td><label for="spass">Set Password <span style="color: red;">*</span></label></td>
+            <td><input type="password" name='password' id='spass' placeholder=" set a password" title="passoword must be in atleast a uppercase and a letter "></td>
+        </tr>
+        <span id=n3></span>
+        <tr>
+            <td><label for="cpass">Confirm Password</label></td>
+            <td><input type="password" name='password' id='cpass' placeholder="Confirm the password"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Create" onclick="signup()">
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

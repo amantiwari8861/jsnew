@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="main" id="main">
+            <div class="submited">
+                <span class="submit_text center">
+                    submited ✅
+                </span>
+            </div>
+            <div class="main-section">
+                <div class="section left">
+                    <form class="form-section center" id="form" autocomplete="off">
+                        <h1 class="registration">Registration info</h1>
+                        <div class="input_items">
+                            <input class="input username" type="text" placeholder="username" id="username">
+                            <label for="username" class="label" id="label_username">username</label>
+                        </div>
+                        <div class="input_items">
+                            <input class="input password" type="password" name="" id="password" placeholder="password">
+                            <label for="password" class="label" id="label_password">password</span>
+                            </label>
+
+                            <span class="passwordError hidden" id="passwordError">
+                                <span class="passwordError_items" id="passwordCharacterCount">
+                                    minimun 10 character</span>
+                                <span class="passwordError_items" id="passwordUppercase">a
+                                    uppercase
+                                    letter</span>
+                                <span class="passwordError_items" id="passwordLowercase">a
+                                    lowercase
+                                    letter</span>
+                                <span class="passwordError_items" id="passwordNumber">a
+                                    number</span>
+                                <span class="passwordError_items" id="passwordSpecialCharacter">
+                                    a
+                                    special
+                                    chracter</span>
+                        </div>
+                        <div class="input_items">
+                            <input class="input password" type="email" placeholder="email" id="email">
+                            <label for="email" class="label" id="label_email">email</label>
+                        </div>
+                        <div class="input_items">
+                            <input class="input number" type="text" placeholder="mobile number" id="number">
+                            <label for="number" class="label" id="label_number">mobile number</label>
+                        </div>
+                        <div class="radio-buttons">
+                            <div>
+                                <input class="radio" id="male" type="radio" name="gender">
+                                <label for="male" class="radio_label">
+                                    <span class="custom_radio"></span>
+                                    <span>
+                                        male
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="radio" id="female" type="radio" name="gender">
+                                <label for="female" class="radio_label">
+                                    <span class="custom_radio"></span>
+                                    <span>
+                                        female
+                                    </span>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="radio" id="other" type="radio" name="gender">
+                                <label for="other" class="radio_label">
+                                    <span class="custom_radio"></span>
+                                    <span>
+                                        other
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-submit" id="submit" type="button">submit</button>
+                            <button class="btn btn-reset" id="reset" type="reset" id="reset">reset</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="section right">
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>

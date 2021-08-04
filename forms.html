@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function validatez()
+        {
+            //var reg=/[A-Za-z0-9]/g;
+            var pass=document.getElementById('password');
+            var caps=document.getElementById("caps");
+            if( pass.value.match(/[A-Z]/g) )
+            {
+                caps.style.color="green";
+                pass.style.outline="none";
+                pass.style.border="2px solid green";
+                caps.innerHTML="<img src='check.png' height='20px'>ur word in caps u r good to go <br>";
+
+            }
+            else
+            {
+                caps.style.color="red";
+                pass.style.outline="none";
+                pass.style.border="2px solid red";
+               caps.innerText="must be in caps \n";
+            }
+
+        }
+    </script>
+</head>
+<body>
+    
+<form action="" method="post"  autocomplete="off" >
+<label for="name">Name <span style="color: red;">*</span>
+    <input type="text" id="name" name="fname" title="MUST BE 3 TO 5 CHARACTERS">
+    <!-- <input type="text" id="name" name="fname" pattern="[a-zA-Z0-9]{3,5}" REQUIRED title="MUST BE 3 TO 5 CHARACTERS"> -->
+</label><br>
+<label for="email">Email <span style="color: red;">*</span>
+    <input type="email" id="email" name="email"  >
+</label><br>
+<label for="password">password <span style="color: red;" >*</span>
+    <input type="text" id="password" name="pass" onkeyup="validatez()" >
+</label><br>
+<span id="caps"></span>
+<span id="small"></span>
+<span id="numeric"></span>
+<span id="special"></span>
+<label for="cpassword"> Confirm-password <span style="color: red;">*</span>
+    <input type="password" id="cpassword" name="cpass"  >
+</label><br>
+<label for="contact"> Contact <span style="color: red;">*</span>
+    <input type="tel" id="contact" name="contact"  >
+</label><br>
+<input type="reset" value="Clear">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

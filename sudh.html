@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    h1{
+        padding-left: 40%;
+    }
+</style>
+<script>
+     function submit()
+    {
+        var n = document.getElementById("n1").value;
+        var e = document.getElementsByid("e1").value;
+        var p = document.getElementsByid("p1").value;
+        var Pw = document.getElementsByid("p2").value;
+
+        var letters = /^[A-Za-z]+$/;  
+        var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+
+        if(n =='' || e ==''|| p ==''|| pw =='')
+        {
+             alert("fill correctly");
+        }
+        else if(!letters.test(n))  
+        {  
+            alert("Name is incorrect must contain alphabets only");  
+        }  
+         
+        else if (!email_val.test(e))  
+        {  
+            alert("Invalid email format please enter valid email id");  
+        }  
+
+        else if(p!=pw)
+        {
+            alert("password not matching");
+        }
+        else if(document.getElementById(p1).value.length>12)
+        {
+            alert("password maximum length is 12");
+        }
+        else if(document.getElementById(p1).value.length<6)
+        {
+            alert("password minimum lenght is 6");
+        }
+        else
+        {
+            alert("Account created  ");
+        }
+
+    }
+
+</script>
+
+</head>
+<body>
+     <h1>Create new account</h1>
+     <p>Name:-<input type="text" placeholder="enter your text" id="n1"></p>
+     <p>Email:-<input type="email" placeholder="Something@gmail.com" id="e1"></p>
+     <p>Password:-<input type="password" placeholder="password" id="p1"></p>
+     <p>Confirm password:-<input type="password" placeholder="re-enter" id="p2"></p>
+
+     <input type="submit" onclick="submit()" value="create">
+
+    
+</body>
+</html>
+

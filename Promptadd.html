@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function sum()
+        {
+            //var num1=parseFloat(prompt("Enter the num1 :"));
+            //var num2=parseFloat(prompt("Enter the num2 :"));
+            //var result=num1+num2;//number
+            //var num1="hello";//string
+            //var arr=["mango","chiku","etc"];//object
+            //var stuobject={name:"aman",class:"12th"};
+            //alert(stuobject.name);
+            //alert(stuobject.class);
+            //var ch='a';
+            //alert(typeof(ch));
+            /*if(num1>50)
+            {
+                alert("greater than 50 !");
+                if(num1==61)
+                {
+                    alert("the number is 61");
+                }
+            }
+            else if(num1==50)
+            {
+                alert("num1 is 50");
+            }
+            else
+            {
+                alert("less than 50");
+            }
+            //for(var i=0;i<10;i++)
+            //var i=0;
+            //while(i<10)
+            do{
+              //document.writeln(i+"<br>"); 
+              document.getElementById('con').innerHTML+="<b>"+i+"</b> "+"<br>";
+              i++;
+            }while(i<10)*/
+            //sum = sum+10;  => sum+=10;
+            var arr=["aman","sunidhi","rohan","rohit"];
+
+            /*for(var i=0;i<arr.length;i++)
+            {
+                document.getElementById('con').innerHTML+="<b>"+arr[i]+"</b> "+"<br>";
+            }*/
+            //for(var name in arr)
+            for(var name of arr)
+            {
+                document.getElementById('con').innerHTML+="<b>"+name+"</b> "+"<br>";
+            }
+
+            document.getElementById('con').style.color="red";
+            document.getElementById('con').style.fontSize="50px";
+            //alert(typeof(stuobject));
+            //alert("the sum is : "+(num1+num2));
+            //alert("the sum of "+num1+" and "+num2+" is : "+result);            
+        }
+    </script>
+</head>
+<body onload="sum()">
+<div id="con">
+
+</div>
+</body>
+</html>

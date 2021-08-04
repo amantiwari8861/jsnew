@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #con{
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="con" style="color: whitesmoke;background-color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, voluptatibus!</div>
+</body>
+<script>
+    var obj1=document.getElementsByClassName("container");
+    /*alert(obj1);
+    alert(obj1[0].style.color);
+    alert(obj1[0].style.backgroundColor);*/ 
+    let variable=window.getComputedStyle(obj1[0]);
+    alert(variable.getPropertyValue("font-weight"));
+    alert(variable.getPropertyValue("color"));
+    alert(variable.getPropertyValue("background-color"));
+</script>
+</html>

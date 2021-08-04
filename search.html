@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Search Text or Pattern inside a String</title>
+</head>
+<body>
+    <script>
+    var str = "my Color red looks brighter than color blue.   any color ";
+ /*
+    // Case sensitive search
+    var pos1 = str.search("color");
+    document.write(pos1 + "<br>"); // 0utputs: 33
+     
+    // Case insensitive search using regexp
+    var pos2 = str.search(/color/i);
+    document.write(pos2+"<br>"); // 0utputs: 3
+
+    // Case sensitive global search using regexp 
+    var pos3 = str.match(/color/g);
+    document.write(pos3+"<br>"); // 0utputs: 
+    
+    // Case insensitive global search using regexp 
+    var pos4 = str.match(/color/ig);
+    document.write(pos4); // 0utputs: 
+    var str = "The quick brown fox jumps over the lazy dog.";
+    document.write(str.length+"<br>");
+    document.write(str.slice(-28, -19)+"<br>"); // Prints: fox jumps
+    document.write(str.slice(31)+"<br>"); // Prints: the lazy dog.
+    document.write(str.slice(str.length-28,str.length-19));// Prints: fox jumps  (hence proved )
+    document.write(str.replace("color","pink")); //replace only 1 
+    document.write(str.replaceAll("color","pink")); //replace all
+    document.write(str.replaceAll(/color/ig,"pink")); //replace all
+    document.write(str.toLowerCase());
+    document.write(str.toUpperCase());
+    document.write(str.charAt(16)+"<br>");
+    document.write(str[4]);*/
+
+
+    var fruitsStr = "Apple, Banana, Mango, Orange, Papaya";
+var fruitsArr = fruitsStr.split(", ");
+/*document.write(fruitsArr[0]); // Prints: Apple
+document.write(fruitsArr[2]); // Prints: Mango
+document.write(fruitsArr[fruitsArr.length - 1]); // Prints: Papaya*/
+ 
+// Loop through all the elements of the fruits array 
+for(var i in fruitsArr) {  
+    document.write("<p>" + fruitsArr[i] + "</p>");
+}
+    
+    </script>
+</body>
+</html>

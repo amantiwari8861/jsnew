@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script>
+      function abc() {
+    //     var con=document.getElementById('container');
+    //     con.innerHTML+="this is extra text ";
+    //   var xyz=document.getElementsByClassName('para')[0];
+    //     xyz.style.color="red";
+    //     for(var i=0;i<6;i++)
+    //     {
+    //         document.getElementsByClassName('para')[i].style.color="green";
+    //     }
+    //document.getElementsByTagName("p")[1].style.color="greenyellow";
+    // document.getElementsByName('hello2')[1].style.color="red";
+        document.querySelector(".para").style.color="red";
+        var xyz=document.querySelectorAll('.para');
+        xyz[5].style.fontSize="200%";}
+  </script>
+</head>
+<body onload="abc()">
+    <div id="container">
+        <p class="para">this is a paragraph 0th.</p>
+        <p class="para" name="hello2">this is a paragraph 1th.</p>
+        <p class="para" name="hello2">this is a paragraph 2nd.</p>
+        <p class="para">this is a paragraph 3rd.</p>
+        <p class="para">this is a paragraph 4th.</p>
+        <p class="para">this is a paragraph 5th.</p>
+        <meter value="50" min="0" max="100">Progress</meter>
+    </div>
+</body>
+</html>

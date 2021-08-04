@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function draw3() {
+        var can=document.getElementById("canv");
+        var ctx=can.getContext("2d");
+        alert(Math.PI);
+        ctx.beginPath();
+        ctx.arc(250,350,100,0,Math.PI,true);
+        // ctx.arc(250,350,100,0,Math.PI*2,true);
+        ctx.closePath();
+        // ctx.stroke();
+        ctx.fillStyle="silver";
+        ctx.fill();
+       } 
+    </script>
+</head>
+<body>hi
+    <canvas height="500" width="1500" id="canv" style="border: 1px solid red;background-color: lightcyan;">no support </canvas>
+<input type="button" value="Draw" onclick="draw3();">
+</body>
+</html>

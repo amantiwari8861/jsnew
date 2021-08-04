@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    display: inline-block;
+    line-height: 45px;
+    font-size: x-large;
+    text-transform: uppercase;
+    margin-left: 50px;
+}
+.head{
+    background: linear-gradient(to right,magenta,skyblue);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+header ul{
+border-radius: 5px;
+list-style: none;
+float: right;
+}
+header ul a li{
+    text-transform: uppercase;
+    font-size: x-large;
+    margin-right: 40px;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding:0px 10px;
+}
+header ul a
+{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    line-height: 40px;
+
+}
+header ul a :hover
+{
+    background-color: rgb(54, 54, 241);
+    color: white;
+}

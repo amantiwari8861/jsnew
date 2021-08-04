@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #con{
+            
+            margin-left: 200px;
+        }
+    </style>
+    <script>
+        function Check2() { 
+            var x = document.getElementById("slct").selectedIndex;
+			alert(x);
+            alert(document.getElementsByTagName("option")[x].value);
+            //var course=["bca","mca","default","bsc","phd"]
+			}
+    </script>
+</head>
+<body>
+    <!-- textlocal -->
+    <h1 align="center">GradeCard</h1>
+    <hr color="grey" size="5" width="80%">
+<div id="con">
+    <form action="" method="post">
+    <select id="slct">
+        <option value="default">------------select Program------------</option>
+        <option value="bca">BCA </option>
+        <option value="mca">MCA</option>
+        <option value="bsc">BSC</option>
+        <option value="phd">PHD</option>
+    </select>
+    <input type="text" id="enroll"> 
+    <input type="submit" value="submit" onclick="Check2()">
+</form>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scr.js"></script>
+
+<style>
+    body{
+        background-color: gray;
+    }
+    #container{
+        max-width: 80%;
+    }
+    #con{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        border: 1px solid violet;
+        border-radius: 10px;
+        transform: translate(-50%,-50%);
+        padding: 5%;
+    }
+    .inp{
+        margin-top: 5%;
+        border-radius: 5%;
+    }
+    .inp:focus{
+        outline-style: solid;
+        outline-color: red;
+        outline-width: 0.5px;
+    }
+    .lab{
+        display: inline-flex;
+        font-weight: 200;
+        margin-top: 10%;
+    }
+</style>
+<body>
+    <div id="container">
+    <div id="con">
+        <form action="" method="post">
+            <span class="lab">Name</span> <br><input type="text" placeholder="Enter ur fullname" class="inp"><br>
+            <span class="lab">Username</span> &nbsp;&nbsp;<br><input type="text" name="username" placeholder="" class="inp"><br>
+            <span class="lab">Password</span> &nbsp;<br><input type="text" name="password" placeholder="" class="inp"> <br>
+            <span class="lab">Confirm password </span> &nbsp;&nbsp;<br><input type="text"   name="repassword" placeholder="" class="inp"> <br>
+            <span class="lab">City </span> &nbsp;<br><input type="text"     name="city" placeholder="" class="inp"> <br>
+            <span class="lab">State </span> <br><input type="text"    name="state" placeholder="" class="inp"> <br>
+        </form>
+    </div>
+
+    </div>
+</body>
+</html>

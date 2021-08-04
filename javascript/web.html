@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        .col1{
+            color: royalblue;
+        }
+        .col2{
+            background-color: blueviolet;
+        }
+        .image1{
+            height: 400px;
+        }
+    </style>
+    <script>
+        function runz(){
+       document.getElementById("para1").innerHTML+=" my name is aman ";
+        }
+        $(document).ready(
+            function(){
+                $("#para1").click(
+                    function(){
+                        // $(this).removeClass("col1");
+                        // $(this).slideUp("slow");
+                        // $(this).slideDown(2000);
+                        // $("#para2").slideToggle(2000);
+                        // $("#para2").append(" his name is Durgesh ");
+                        $(".image1").animate({
+                            width:"500px",
+                            borderRadius:"10px"
+                        });
+                    });
+            });
+    </script>
+</head>
+<body onload="runz()">
+    <p id="para1" class="col1" >hello</p>
+    <img src="win.jpg" class="image1">
+    <p id="para2" class="col1" >hello</p> 
+</body>
+</html>

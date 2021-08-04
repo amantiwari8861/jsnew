@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        function validatez() {
+            var err = document.getElementsByClassName("err")[0];
+            var fname = document.getElementById("fname").value;
+            var name1=document.forms["myform1"]["fname4"].value;
+            alert(name1);
+
+            if (fname < 6) {
+                err.innerHTML = "input 6 and more than 6 characters ";
+                return false;
+            } else if (fname == "") {
+                //fname==NaN
+                alert("pls provide a value");
+                return false;
+            } else {
+                alert("validation done1");
+                return true;
+            }
+        }
+    </script>
+    <style>
+        .err {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Mega</legend>
+        <!-- <form action="" method="post" novalidate autocomplete="off"> -->
+        <form action="" method="post" name="myform1" onsubmit="return validatez()">
+            <label for="fname">Name<span style="color: red">*</span></label>
+            <!-- <span >Name : </span> -->
+            <!-- <input type="text" id="fname" required autofocus autocomplete="off" size="10" value="Aman Tiwari"> -->
+            <input type="text" id="fname" pattern="[A-Za-z0-9 ]{4}" list="list2"
+                title="pls insert only capital and small letter only 4 digit" name="fname4"/>
+            <br />
+            <span class="err"></span><br /><br />
+           <label for="email">Email</label> <input type="email" name="email"><br />
+            <span class="err"></span><br /><br />
+            <label for="phone">Phone no.</label><input type="tel" name="phone">
+            <br />
+            <span class="err"></span><br /><br />
+            <input type="submit" />
+        </form>
+    </fieldset>
+    <datalist id="list2">
+        <option value="Aman"></option>
+        <option value="NAman"></option>
+        <option value="SAm"></option>
+    </datalist>
+</body>
+
+</html>
